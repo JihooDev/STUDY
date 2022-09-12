@@ -16,7 +16,7 @@ window.location과 비슷하게 동작 함으로
 a 태그를 생성하지 않기에 SEO에 불리하다.
 대부분 onClick 이벤트 핸들러와 같이 사용 된다.
 
-## 2. <Link>
+## 2. Link
 
 ```jsx
 <Link href={'/about'}>
