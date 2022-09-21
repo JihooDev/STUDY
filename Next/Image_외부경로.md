@@ -12,7 +12,8 @@ JSON 의 이미지 경로들은 모두 https:// 로 시작하는 경로였다.
 
 하지만 다른 텍스트는 불러오고 이미지는 2초 3초 뒤에 나오니 ui 부분에서 굉장히 불편했다.
 
-<img width="275" alt="스크린샷 2022-09-21 오전 9 08 16" src="https://user-images.githubusercontent.com/105398995/191387361-4a49b623-cf1b-4c4c-8cbb-63be94d54ce7.png">%EC%98%A4%EC%A0%84_9.10.04.png)
+<img width="100%" alt="스크린샷 2022-09-21 오전 9 10 04" src="https://user-images.githubusercontent.com/105398995/191387475-abd98bff-b8d0-4150-8b3f-8457a1a005b2.png">
+
 
 ## 해결 😃
 
@@ -38,5 +39,5 @@ https:// 로 시작한다면 https:// {{next.config에 추가할 내용 }} /resi
 
 domains 배열에 [images.chosun.com](https://images.chosun.com/resizer/sD2V9t5EOBvs-FOtUUDOJekXUx4=/616x0/smart/cloudfront-ap-northeast-1.images.arcpublishing.com/chosun/U4IIQNIIYFLA3JC7EYMNJMOCIA.JPG) 이 부분을 추가 하면 된다.
 
-<img width="275" alt="스크린샷 2022-09-21 오전 9 08 16" src="https://user-images.githubusercontent.com/105398995/191387435-72f4a11f-27d0-4170-b36f-1123f037372c.png">
+<img width="100%" alt="스크린샷 2022-09-21 오전 9 08 16" src="https://user-images.githubusercontent.com/105398995/191387435-72f4a11f-27d0-4170-b36f-1123f037372c.png">
 
