@@ -1,0 +1,51 @@
+- getInstallSourceAndroid
+    - param x
+- initConnection
+    - param x
+    - 구매 흐름을 위한 init 모듈. Android에서는 필수. ios에서는 사용자가 결제할 수 있는지 확인
+- endConnection = 안드로이드
+    - param x
+    - **구매 흐름을 위한 엔드 모듈.**
+- flushFailedPurchasesCachedAsPendingAndroid = 안드로이드만 지원
+    - param x
+    - 이미 실패했지만 Play Store 캐시에 보류 중으로 표시된 보류 중인 결제를 사용
+- getProducts
+    - param (skus: string[])
+    - 제품 목록 가져오기(소비 및 비소모 품목, 구독 제외)
+- getSubscriptions
+    - param (skus: string[])
+    - **구독 목록 가져오기**
+- getPurchaseHistory
+    - param x
+    - 사용자가 구매한 상품을 가져옴
+- getAvailablePurchases
+    - param x
+    - 사용자가 사용하지 않은 구입한 상품을 가져옴
+- requestPurchase
+    - param
+        - {string} sku The product's sku/ID (상품의 ID)
+        - {boolean} [andDangerouslyFinishTransactionAutomaticallyIOS] (구매한 상품을 사용자가 받은 이후에는 false로 설정한다)
+        - {string} [obfuscatedAccountIdAndroid] (앱에서 사용자 계정과 고유하게 연결된 난독화된 선택적 문자열을 지정)
+        - {string} [obfuscatedProfileIdAndroid] (앱에서 사용자 프로필과 고유하게 연결된 난독화된 선택적 문자열을 지정)
+    - 상품 구매를 요청 (구독상품 제외, 단일상품)
+- requestSubscription
+    - param
+        - {string} sku The product's sku/ID (상품의 ID)
+        - {boolean} [andDangerouslyFinishTransactionAutomaticallyIOS] (구매한 상품을 사용자가 받은 이후에는 false로 설정한다)
+        - {string} [purchaseTokenAndroid] (업그레이드 다운그레이드 시 현재 가지고있는 구독상품의 토큰을 제출)
+        - {ProrationModesAndroid} [prorationModeAndroid] (구매 시 결제 주기를 결정)
+        - {string} [obfuscatedAccountIdAndroid] (앱에서 사용자 계정과 고유하게 연결된 난독화된 선택적 문자열을 지정)
+        - {string} [obfuscatedProfileIdAndroid] (앱에서 사용자 프로필과 고유하게 연결된 난독화된 선택적 문자열을 지정)
+- requestPurchaseWithQuantityIOS
+    - param
+        - {string} sku The product's sku/ID (상품의 ID)
+    - 제품구매를 요청
+- finishTransaction
+    - param
+        - {object} purchase (완료하려는 거매)
+        - {boolean} isConsumable (구매가 단일상품인지 확인 = 안드로이드에서만 작동)
+        - {string} developerPayloadAndroid (안드로이드 개발자 페이로드)
+    - 구매한 상태를 서버 / 로컬에 전달
+- clearTransactionIOS
+    - 유효한 상품 지우기 (ios에만 작동)
+    - 애플서버에서 구매한 모든 제품을 지움
