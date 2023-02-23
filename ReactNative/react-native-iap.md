@@ -5,7 +5,7 @@
     - 구매 흐름을 위한 init 모듈. Android에서는 필수. ios에서는 사용자가 결제할 수 있는지 확인
 - endConnection = 안드로이드
     - param x
-    - **구매 흐름을 위한 엔드 모듈.**
+    - 구매 흐름을 위한 엔드 모듈
 - flushFailedPurchasesCachedAsPendingAndroid = 안드로이드만 지원
     - param x
     - 이미 실패했지만 Play Store 캐시에 보류 중으로 표시된 보류 중인 결제를 사용
@@ -14,7 +14,7 @@
     - 제품 목록 가져오기(소비 및 비소모 품목, 구독 제외)
 - getSubscriptions
     - param (skus: string[])
-    - **구독 목록 가져오기**
+    - 구독 목록 가져오기
 - getPurchaseHistory
     - param x
     - 사용자가 구매한 상품을 가져옴
