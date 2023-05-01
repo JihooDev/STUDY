@@ -33,6 +33,7 @@ function solution(my_string, n) {
 slice와 substring 의 차이점은 음수가 입력된 상황에서 발생한다.
 substring은 음수는 무조건 0으로 인식한다.
 slice는 음수를 입력한 경우 가장 뒤 글자부터 계산을 하여 출력한다.
+또한 첫번째 매개변수가 음수일 경우 두번째 매개변수도 음수로 들어가야 계산이 되어 출력한다.
 
 ```jsx
   const testText = "뉴진스의하입보이요";
